@@ -3,8 +3,8 @@ INCLUDE_PATH=source/
 
 docket:
 	mkdir correct-source/
-	sed 's/Dkt/Docket/g' source/icc_final_report.txt > correct-source/icc_final_report.txt 
-	echo | date >> correct-source/icc_final_report.txt 
+	sed 's/Dkt/Docket/g' $(ICC) > correct-source/$(ICC)
+	echo | date >> correct-source/icc.txt
 	
 .PHONY : clean
 clean:
